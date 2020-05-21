@@ -48,12 +48,13 @@
             this.ANS = new System.Windows.Forms.Button();
             this.igual = new System.Windows.Forms.Button();
             this.Screen = new System.Windows.Forms.TextBox();
+            this.Screen2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // number7
             // 
             this.number7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number7.Location = new System.Drawing.Point(12, 100);
+            this.number7.Location = new System.Drawing.Point(12, 131);
             this.number7.Name = "number7";
             this.number7.Size = new System.Drawing.Size(60, 45);
             this.number7.TabIndex = 0;
@@ -64,7 +65,7 @@
             // number8
             // 
             this.number8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number8.Location = new System.Drawing.Point(78, 100);
+            this.number8.Location = new System.Drawing.Point(78, 131);
             this.number8.Name = "number8";
             this.number8.Size = new System.Drawing.Size(60, 45);
             this.number8.TabIndex = 1;
@@ -75,7 +76,7 @@
             // number9
             // 
             this.number9.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number9.Location = new System.Drawing.Point(144, 100);
+            this.number9.Location = new System.Drawing.Point(144, 131);
             this.number9.Name = "number9";
             this.number9.Size = new System.Drawing.Size(60, 45);
             this.number9.TabIndex = 2;
@@ -86,7 +87,7 @@
             // DEL
             // 
             this.DEL.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DEL.Location = new System.Drawing.Point(210, 100);
+            this.DEL.Location = new System.Drawing.Point(210, 131);
             this.DEL.Name = "DEL";
             this.DEL.Size = new System.Drawing.Size(60, 45);
             this.DEL.TabIndex = 3;
@@ -97,7 +98,7 @@
             // AC
             // 
             this.AC.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AC.Location = new System.Drawing.Point(276, 100);
+            this.AC.Location = new System.Drawing.Point(276, 131);
             this.AC.Name = "AC";
             this.AC.Size = new System.Drawing.Size(60, 45);
             this.AC.TabIndex = 4;
@@ -108,7 +109,7 @@
             // number4
             // 
             this.number4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number4.Location = new System.Drawing.Point(12, 151);
+            this.number4.Location = new System.Drawing.Point(12, 182);
             this.number4.Name = "number4";
             this.number4.Size = new System.Drawing.Size(60, 45);
             this.number4.TabIndex = 5;
@@ -119,7 +120,7 @@
             // number6
             // 
             this.number6.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number6.Location = new System.Drawing.Point(144, 151);
+            this.number6.Location = new System.Drawing.Point(144, 182);
             this.number6.Name = "number6";
             this.number6.Size = new System.Drawing.Size(60, 45);
             this.number6.TabIndex = 6;
@@ -130,7 +131,7 @@
             // number5
             // 
             this.number5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number5.Location = new System.Drawing.Point(78, 151);
+            this.number5.Location = new System.Drawing.Point(78, 182);
             this.number5.Name = "number5";
             this.number5.Size = new System.Drawing.Size(60, 45);
             this.number5.TabIndex = 7;
@@ -141,7 +142,7 @@
             // mult
             // 
             this.mult.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mult.Location = new System.Drawing.Point(210, 151);
+            this.mult.Location = new System.Drawing.Point(210, 182);
             this.mult.Name = "mult";
             this.mult.Size = new System.Drawing.Size(60, 45);
             this.mult.TabIndex = 8;
@@ -152,7 +153,7 @@
             // div
             // 
             this.div.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.div.Location = new System.Drawing.Point(276, 151);
+            this.div.Location = new System.Drawing.Point(276, 182);
             this.div.Name = "div";
             this.div.Size = new System.Drawing.Size(60, 45);
             this.div.TabIndex = 9;
@@ -163,7 +164,7 @@
             // number1
             // 
             this.number1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number1.Location = new System.Drawing.Point(12, 202);
+            this.number1.Location = new System.Drawing.Point(12, 233);
             this.number1.Name = "number1";
             this.number1.Size = new System.Drawing.Size(60, 45);
             this.number1.TabIndex = 10;
@@ -174,7 +175,7 @@
             // sum
             // 
             this.sum.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sum.Location = new System.Drawing.Point(210, 202);
+            this.sum.Location = new System.Drawing.Point(210, 233);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(60, 45);
             this.sum.TabIndex = 11;
@@ -185,7 +186,7 @@
             // number2
             // 
             this.number2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number2.Location = new System.Drawing.Point(78, 202);
+            this.number2.Location = new System.Drawing.Point(78, 233);
             this.number2.Name = "number2";
             this.number2.Size = new System.Drawing.Size(60, 45);
             this.number2.TabIndex = 12;
@@ -196,7 +197,7 @@
             // number3
             // 
             this.number3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number3.Location = new System.Drawing.Point(144, 202);
+            this.number3.Location = new System.Drawing.Point(144, 233);
             this.number3.Name = "number3";
             this.number3.Size = new System.Drawing.Size(60, 45);
             this.number3.TabIndex = 13;
@@ -207,7 +208,7 @@
             // rest
             // 
             this.rest.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rest.Location = new System.Drawing.Point(276, 202);
+            this.rest.Location = new System.Drawing.Point(276, 233);
             this.rest.Name = "rest";
             this.rest.Size = new System.Drawing.Size(60, 45);
             this.rest.TabIndex = 14;
@@ -218,7 +219,7 @@
             // number0
             // 
             this.number0.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number0.Location = new System.Drawing.Point(12, 253);
+            this.number0.Location = new System.Drawing.Point(12, 284);
             this.number0.Name = "number0";
             this.number0.Size = new System.Drawing.Size(60, 45);
             this.number0.TabIndex = 15;
@@ -229,7 +230,7 @@
             // decimalPoint
             // 
             this.decimalPoint.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.decimalPoint.Location = new System.Drawing.Point(78, 253);
+            this.decimalPoint.Location = new System.Drawing.Point(78, 284);
             this.decimalPoint.Name = "decimalPoint";
             this.decimalPoint.Size = new System.Drawing.Size(60, 45);
             this.decimalPoint.TabIndex = 16;
@@ -240,7 +241,7 @@
             // ANS
             // 
             this.ANS.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ANS.Location = new System.Drawing.Point(144, 253);
+            this.ANS.Location = new System.Drawing.Point(144, 284);
             this.ANS.Name = "ANS";
             this.ANS.Size = new System.Drawing.Size(60, 45);
             this.ANS.TabIndex = 17;
@@ -251,7 +252,7 @@
             // igual
             // 
             this.igual.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igual.Location = new System.Drawing.Point(210, 253);
+            this.igual.Location = new System.Drawing.Point(210, 284);
             this.igual.Name = "igual";
             this.igual.Size = new System.Drawing.Size(126, 45);
             this.igual.TabIndex = 18;
@@ -263,7 +264,7 @@
             // 
             this.Screen.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Screen.Font = new System.Drawing.Font("SimSun-ExtB", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Screen.Location = new System.Drawing.Point(12, 36);
+            this.Screen.Location = new System.Drawing.Point(12, 71);
             this.Screen.Name = "Screen";
             this.Screen.ReadOnly = true;
             this.Screen.Size = new System.Drawing.Size(324, 54);
@@ -271,12 +272,23 @@
             this.Screen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Screen.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // Screen2
+            // 
+            this.Screen2.Font = new System.Drawing.Font("SimSun-ExtB", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Screen2.Location = new System.Drawing.Point(12, 40);
+            this.Screen2.Name = "Screen2";
+            this.Screen2.ReadOnly = true;
+            this.Screen2.Size = new System.Drawing.Size(324, 34);
+            this.Screen2.TabIndex = 20;
+            this.Screen2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(350, 309);
+            this.ClientSize = new System.Drawing.Size(348, 335);
+            this.Controls.Add(this.Screen2);
             this.Controls.Add(this.Screen);
             this.Controls.Add(this.igual);
             this.Controls.Add(this.ANS);
@@ -298,7 +310,7 @@
             this.Controls.Add(this.number8);
             this.Controls.Add(this.number7);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -327,6 +339,7 @@
         private System.Windows.Forms.Button ANS;
         private System.Windows.Forms.Button igual;
         private System.Windows.Forms.TextBox Screen;
+        private System.Windows.Forms.TextBox Screen2;
     }
 }
 

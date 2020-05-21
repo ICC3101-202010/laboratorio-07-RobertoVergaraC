@@ -52,19 +52,28 @@ namespace Laboratorio7RobertoVergaraC
                 {
                     Sum = suma.Sumar(first, second);
                     ans = Sum;
+                    Screen2.Text = Screen2.Text + Screen.Text + "=";
                     Screen.Text = Sum.ToString();
+                    first = 0;
+                    second = 0;
                 }
                 else if (operador == "-")
                 {
                     Res = resta.Restar(first, second);
                     ans = Res;
+                    Screen2.Text = Screen2.Text + Screen.Text + "=";
                     Screen.Text = Res.ToString();
+                    first = 0;
+                    second = 0;
                 }
                 else if (operador == "X")
                 {
                     Mul = multiplicacion.Multiplicar(first, second);
                     ans = Mul;
+                    Screen2.Text = Screen2.Text + Screen.Text + "=";
                     Screen.Text = Mul.ToString();
+                    first = 1;
+                    second = 1;
                 }
                 else if(operador== "÷")
                 {
@@ -76,8 +85,11 @@ namespace Laboratorio7RobertoVergaraC
                     else
                     {
                         ans = Div;
+                        Screen2.Text = Screen2.Text + Screen.Text + "=";
                         Screen.Text = Div.ToString();
                     }
+                    first = 1;
+                    second = 1;
                 }
             }
             catch
@@ -88,7 +100,28 @@ namespace Laboratorio7RobertoVergaraC
 
         private void ANS_Click(object sender, EventArgs e)
         {
-            Screen.Text = Screen.Text + ans.ToString();
+            Screen.Text = ans.ToString();
+            if (operador == "+")
+            {
+                first = 0;
+                second = 0;
+            }
+            else if (operador == "-")
+            {
+                first = 0;
+                second = 0;
+            }
+            else if (operador == "X")
+            {
+                first = 1;
+                second = 1;
+            }
+            else if (operador == "÷")
+            {
+                first = 1;
+                second = 1;
+            }
+            Screen2.Clear();
         }
 
         private void decimalPoint_Click(object sender, EventArgs e)
@@ -107,6 +140,7 @@ namespace Laboratorio7RobertoVergaraC
             {
                 operador = "-";
                 first = double.Parse(Screen.Text);
+                Screen2.Text = first.ToString() + "-";
                 Screen.Clear();
             }
             catch
@@ -132,6 +166,7 @@ namespace Laboratorio7RobertoVergaraC
             {
                 operador = "+";
                 first = double.Parse(Screen.Text);
+                Screen2.Text = first.ToString() + "+";
                 Screen.Clear();
             }
             catch
@@ -152,6 +187,7 @@ namespace Laboratorio7RobertoVergaraC
             {
                 operador = "÷";
                 first = double.Parse(Screen.Text);
+                Screen2.Text = first.ToString() + "÷";
                 Screen.Clear();
             }
             catch
@@ -167,6 +203,7 @@ namespace Laboratorio7RobertoVergaraC
             {
                 operador = "X";
                 first = double.Parse(Screen.Text);
+                Screen2.Text = first.ToString() + "X";
                 Screen.Clear();
             }
             catch
@@ -194,6 +231,7 @@ namespace Laboratorio7RobertoVergaraC
         private void AC_Click(object sender, EventArgs e)
         {
             Screen.Clear();
+            Screen2.Clear();
         }
 
         private void DEL_Click(object sender, EventArgs e)
@@ -202,6 +240,7 @@ namespace Laboratorio7RobertoVergaraC
                 Screen.Text = "0";
             else
                 Screen.Text = Screen.Text.Substring(0, Screen.Text.Length - 1);
+            Screen2.Clear();
         }
 
         private void number9_Click(object sender, EventArgs e)
