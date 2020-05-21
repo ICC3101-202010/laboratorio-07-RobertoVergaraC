@@ -39,36 +39,51 @@ namespace Laboratorio7RobertoVergaraC
 
         private void igual_Click(object sender, EventArgs e)
         {
-            second = double.Parse(Screen.Text);
-
-            double Sum;
-            double Res;
-            double Mul;
-            double Div;
-
-            switch (operador)
+            try
             {
-                case "+":
-                    Sum = suma.Sumar((first), (second));
+                second = double.Parse(Screen.Text);
+
+                double Sum;
+                double Res;
+                double Mul;
+                double Div;
+
+                if (operador == "+")
+                {
+                    Sum = suma.Sumar(first, second);
                     ans = Sum;
                     Screen.Text = Sum.ToString();
-                    break;
-                case "-":
-                    Res = resta.Restar((first), (second));
+                }
+                else if (operador == "-")
+                {
+                    Res = resta.Restar(first, second);
                     ans = Res;
                     Screen.Text = Res.ToString();
-                    break;
-                case "X":
-                    Mul = multiplicacion.Multiplicar((first), (second));
+                }
+                else if (operador == "X")
+                {
+                    Mul = multiplicacion.Multiplicar(first, second);
                     ans = Mul;
                     Screen.Text = Mul.ToString();
-                    break;
-                case "÷":
-                    Div = division.Dividir((first), (second));
-                    ans = Div;
-                    Screen.Text = Div.ToString();
-                    break;
+                }
+                else if(operador== "÷")
+                {
+                    Div = division.Dividir(first, second);
+                    if (second == 0)
+                    {
+                        Screen.Text = "MATH ERROR";
+                    }
+                    else
+                    {
+                        ans = Div;
+                        Screen.Text = Div.ToString();
+                    }
+                }
             }
+            catch
+            {
+                Screen.Text = "SINTAX ERROR";
+            }  
         }
 
         private void ANS_Click(object sender, EventArgs e)
@@ -78,7 +93,7 @@ namespace Laboratorio7RobertoVergaraC
 
         private void decimalPoint_Click(object sender, EventArgs e)
         {
-            Screen.Text = Screen.Text + ".";
+            Screen.Text = Screen.Text + ",";
         }
 
         private void number0_Click(object sender, EventArgs e)
@@ -88,9 +103,17 @@ namespace Laboratorio7RobertoVergaraC
 
         private void rest_Click(object sender, EventArgs e)
         {
-            operador = "-";
-            first = double.Parse(Screen.Text);
-            Screen.Clear();
+            try
+            {
+                operador = "-";
+                first = double.Parse(Screen.Text);
+                Screen.Clear();
+            }
+            catch
+            {
+                Screen.Clear();
+                Screen.Text = "SINTAX ERROR";
+            }
         }
 
         private void number3_Click(object sender, EventArgs e)
@@ -105,9 +128,17 @@ namespace Laboratorio7RobertoVergaraC
 
         private void sum_Click(object sender, EventArgs e)
         {
-            operador = "+";
-            first = double.Parse(Screen.Text);
-            Screen.Clear();
+            try
+            {
+                operador = "+";
+                first = double.Parse(Screen.Text);
+                Screen.Clear();
+            }
+            catch
+            {
+                Screen.Clear();
+                Screen.Text = "SINTAX ERROR";
+            }
         }
 
         private void number1_Click(object sender, EventArgs e)
@@ -117,16 +148,32 @@ namespace Laboratorio7RobertoVergaraC
 
         private void div_Click(object sender, EventArgs e)
         {
-            operador = "÷";
-            first = double.Parse(Screen.Text);
-            Screen.Clear();
+            try
+            {
+                operador = "÷";
+                first = double.Parse(Screen.Text);
+                Screen.Clear();
+            }
+            catch
+            {
+                Screen.Clear();
+                Screen.Text = "SINTAX ERROR";
+            }
         }
 
         private void mult_Click(object sender, EventArgs e)
         {
-            operador = "X";
-            first = double.Parse(Screen.Text);
-            Screen.Clear();
+            try
+            {
+                operador = "X";
+                first = double.Parse(Screen.Text);
+                Screen.Clear();
+            }
+            catch
+            {
+                Screen.Clear();
+                Screen.Text = "SINTAX ERROR";
+            }
         }
 
         private void number5_Click(object sender, EventArgs e)

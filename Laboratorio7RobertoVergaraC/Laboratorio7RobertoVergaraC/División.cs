@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Laboratorio7RobertoVergaraC
 {
@@ -10,7 +11,8 @@ namespace Laboratorio7RobertoVergaraC
     {
         public double Dividir(double a, double b)
         {
-            return a / b;
+            return a/b;
         }
     }
 }
+

@@ -233,7 +233,7 @@
             this.decimalPoint.Name = "decimalPoint";
             this.decimalPoint.Size = new System.Drawing.Size(60, 45);
             this.decimalPoint.TabIndex = 16;
-            this.decimalPoint.Text = ".";
+            this.decimalPoint.Text = ",";
             this.decimalPoint.UseVisualStyleBackColor = true;
             this.decimalPoint.Click += new System.EventHandler(this.decimalPoint_Click);
             // 
