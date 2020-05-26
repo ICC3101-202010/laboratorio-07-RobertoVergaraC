@@ -16,12 +16,13 @@ namespace Laboratorio7RobertoVergaraC
         double second;
         string operador;
         double ans;
+        List<string> historial2 = new List<string>();
 
         public Form1()
         {
             InitializeComponent();
+            HisitorialPanel.Visible = false;
         }
-
         Suma suma = new Suma();
         Resta resta = new Resta();
         Multiplicación multiplicacion = new Multiplicación();
@@ -56,6 +57,7 @@ namespace Laboratorio7RobertoVergaraC
                     Screen.Text = Sum.ToString();
                     first = 0;
                     second = 0;
+                    historial2.Add(Screen2.Text + Screen.Text);
                 }
                 else if (operador == "-")
                 {
@@ -65,6 +67,7 @@ namespace Laboratorio7RobertoVergaraC
                     Screen.Text = Res.ToString();
                     first = 0;
                     second = 0;
+                    historial2.Add(Screen2.Text + Screen.Text);
                 }
                 else if (operador == "X")
                 {
@@ -74,6 +77,7 @@ namespace Laboratorio7RobertoVergaraC
                     Screen.Text = Mul.ToString();
                     first = 1;
                     second = 1;
+                    historial2.Add(Screen2.Text + Screen.Text);
                 }
                 else if(operador== "÷")
                 {
@@ -87,6 +91,7 @@ namespace Laboratorio7RobertoVergaraC
                         ans = Div;
                         Screen2.Text = Screen2.Text + Screen.Text + "=";
                         Screen.Text = Div.ToString();
+                        historial2.Add(Screen2.Text + Screen.Text);
                     }
                     first = 1;
                     second = 1;
@@ -256,6 +261,41 @@ namespace Laboratorio7RobertoVergaraC
         private void number7_Click(object sender, EventArgs e)
         {
             Screen.Text = Screen.Text + "7";
+        }
+
+        private void HisitorialPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void HistorialButton_Click(object sender, EventArgs e)
+        {
+            HisitorialPanel.Visible = true;
+            ImprimirValoresHistorial();
+        }
+
+        private void VolverCalculadoraButton_Click(object sender, EventArgs e)
+        {
+            HisitorialPanel.Visible = false;
+        }
+
+        private void BorrarHisotrialButton_Click(object sender, EventArgs e)
+        {
+            historial2.Clear();
+            ValoresHistorialTextBox.Text = "";
+        }
+
+        private void ValoresHistorialTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprimirValoresHistorial()
+        {
+            foreach (string datos in historial2)
+            {
+                ValoresHistorialTextBox.Text += datos + "\r\n";
+            }
         }
     }
 }

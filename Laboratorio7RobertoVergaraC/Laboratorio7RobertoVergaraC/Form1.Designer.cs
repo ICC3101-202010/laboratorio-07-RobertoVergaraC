@@ -49,6 +49,13 @@
             this.igual = new System.Windows.Forms.Button();
             this.Screen = new System.Windows.Forms.TextBox();
             this.Screen2 = new System.Windows.Forms.TextBox();
+            this.HistorialButton = new System.Windows.Forms.Button();
+            this.HisitorialPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.VolverCalculadoraButton = new System.Windows.Forms.Button();
+            this.BorrarHisotrialButton = new System.Windows.Forms.Button();
+            this.ValoresHistorialTextBox = new System.Windows.Forms.TextBox();
+            this.HisitorialPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // number7
@@ -282,12 +289,81 @@
             this.Screen2.TabIndex = 20;
             this.Screen2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // HistorialButton
+            // 
+            this.HistorialButton.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HistorialButton.Location = new System.Drawing.Point(12, 335);
+            this.HistorialButton.Name = "HistorialButton";
+            this.HistorialButton.Size = new System.Drawing.Size(324, 45);
+            this.HistorialButton.TabIndex = 21;
+            this.HistorialButton.Text = "Historial";
+            this.HistorialButton.UseVisualStyleBackColor = true;
+            this.HistorialButton.Click += new System.EventHandler(this.HistorialButton_Click);
+            // 
+            // HisitorialPanel
+            // 
+            this.HisitorialPanel.Controls.Add(this.ValoresHistorialTextBox);
+            this.HisitorialPanel.Controls.Add(this.label1);
+            this.HisitorialPanel.Controls.Add(this.VolverCalculadoraButton);
+            this.HisitorialPanel.Controls.Add(this.BorrarHisotrialButton);
+            this.HisitorialPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HisitorialPanel.Location = new System.Drawing.Point(0, 0);
+            this.HisitorialPanel.Name = "HisitorialPanel";
+            this.HisitorialPanel.Size = new System.Drawing.Size(348, 381);
+            this.HisitorialPanel.TabIndex = 22;
+            this.HisitorialPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HisitorialPanel_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 32);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Historial";
+            // 
+            // VolverCalculadoraButton
+            // 
+            this.VolverCalculadoraButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VolverCalculadoraButton.Location = new System.Drawing.Point(176, 326);
+            this.VolverCalculadoraButton.Name = "VolverCalculadoraButton";
+            this.VolverCalculadoraButton.Size = new System.Drawing.Size(160, 43);
+            this.VolverCalculadoraButton.TabIndex = 2;
+            this.VolverCalculadoraButton.Text = "Volver a la Calculadora";
+            this.VolverCalculadoraButton.UseVisualStyleBackColor = true;
+            this.VolverCalculadoraButton.Click += new System.EventHandler(this.VolverCalculadoraButton_Click);
+            // 
+            // BorrarHisotrialButton
+            // 
+            this.BorrarHisotrialButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorrarHisotrialButton.Location = new System.Drawing.Point(12, 326);
+            this.BorrarHisotrialButton.Name = "BorrarHisotrialButton";
+            this.BorrarHisotrialButton.Size = new System.Drawing.Size(160, 43);
+            this.BorrarHisotrialButton.TabIndex = 1;
+            this.BorrarHisotrialButton.Text = "Borrar Historial";
+            this.BorrarHisotrialButton.UseVisualStyleBackColor = true;
+            this.BorrarHisotrialButton.Click += new System.EventHandler(this.BorrarHisotrialButton_Click);
+            // 
+            // ValoresHistorialTextBox
+            // 
+            this.ValoresHistorialTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValoresHistorialTextBox.Location = new System.Drawing.Point(4, 40);
+            this.ValoresHistorialTextBox.Multiline = true;
+            this.ValoresHistorialTextBox.Name = "ValoresHistorialTextBox";
+            this.ValoresHistorialTextBox.ReadOnly = true;
+            this.ValoresHistorialTextBox.Size = new System.Drawing.Size(341, 280);
+            this.ValoresHistorialTextBox.TabIndex = 4;
+            this.ValoresHistorialTextBox.TextChanged += new System.EventHandler(this.ValoresHistorialTextBox_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(348, 335);
+            this.ClientSize = new System.Drawing.Size(348, 381);
+            this.Controls.Add(this.HisitorialPanel);
+            this.Controls.Add(this.HistorialButton);
             this.Controls.Add(this.Screen2);
             this.Controls.Add(this.Screen);
             this.Controls.Add(this.igual);
@@ -312,6 +388,8 @@
             this.Name = "Form1";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.HisitorialPanel.ResumeLayout(false);
+            this.HisitorialPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,6 +418,12 @@
         private System.Windows.Forms.Button igual;
         private System.Windows.Forms.TextBox Screen;
         private System.Windows.Forms.TextBox Screen2;
+        private System.Windows.Forms.Button HistorialButton;
+        private System.Windows.Forms.Panel HisitorialPanel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button VolverCalculadoraButton;
+        private System.Windows.Forms.Button BorrarHisotrialButton;
+        private System.Windows.Forms.TextBox ValoresHistorialTextBox;
     }
 }
 
